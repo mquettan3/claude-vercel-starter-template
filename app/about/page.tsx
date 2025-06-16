@@ -7,8 +7,8 @@ export default function AboutPage() {
       title="About Us" 
       description="Learn more about our mission and values"
     >
-      <div className="prose prose-lg max-w-none">
-        <p className="lead">
+      <div className="max-w-none">
+        <p className="text-lg font-medium mb-4">
           This starter template is designed to help developers quickly bootstrap modern web applications
           with the best tools and practices in the React ecosystem.
         </p>

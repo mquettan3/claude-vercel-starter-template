@@ -1,7 +1,6 @@
 import PageLayout from '@/components/layouts/PageLayout'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
-import Image from 'next/image'
 
 export default function Home() {
   return (

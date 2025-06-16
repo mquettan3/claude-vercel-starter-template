@@ -23,7 +23,7 @@ export default function Navigation({ items, className = '' }: NavigationProps) {
                 <Link
                   key={child.href}
                   href={child.href}
-                  className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-accent transition-colors"
+                  className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-muted transition-colors"
                 >
                   {child.label}
                 </Link>
@@ -61,7 +61,7 @@ export default function Navigation({ items, className = '' }: NavigationProps) {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-foreground/80 hover:text-foreground hover:bg-accent focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-foreground/80 hover:text-foreground hover:bg-muted focus:outline-none"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -82,7 +82,7 @@ export default function Navigation({ items, className = '' }: NavigationProps) {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-foreground/80 hover:text-foreground hover:bg-accent"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-foreground/80 hover:text-foreground hover:bg-muted"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
