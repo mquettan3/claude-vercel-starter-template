@@ -2,8 +2,8 @@ import { ButtonProps } from '@/types'
 
 const variants = {
   primary: 'bg-primary text-primary-foreground hover:bg-primary/90',
-  secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-  outline: 'border bg-background hover:bg-accent hover:text-accent-foreground',
+  secondary: 'bg-muted text-muted-foreground hover:bg-muted/80',
+  outline: 'border bg-background hover:bg-muted',
 }
 
 const sizes = {
