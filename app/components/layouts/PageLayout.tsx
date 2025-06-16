@@ -1,5 +1,10 @@
-import { PageLayoutProps } from '@/types'
 import Navigation from '@/components/ui/Navigation'
+
+interface PageLayoutProps {
+  children: React.ReactNode
+  title?: string
+  description?: string
+}
 
 const navItems = [
   { label: 'Home', href: '/' },

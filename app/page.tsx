@@ -51,30 +51,19 @@ export default function Home() {
         <div className="mt-16 text-center">
           <h2 className="text-3xl font-bold mb-8">Built with Modern Tools</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold">N</span>
+            {[
+              { letter: 'N', name: 'Next.js 15' },
+              { letter: 'R', name: 'React 19' },
+              { letter: 'T', name: 'TypeScript' },
+              { letter: 'T', name: 'Tailwind' },
+            ].map((tech) => (
+              <div key={tech.name} className="flex flex-col items-center">
+                <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mb-2">
+                  <span className="text-2xl font-bold">{tech.letter}</span>
+                </div>
+                <span className="text-sm font-medium">{tech.name}</span>
               </div>
-              <span className="text-sm font-medium">Next.js 15</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold">R</span>
-              </div>
-              <span className="text-sm font-medium">React 19</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold">T</span>
-              </div>
-              <span className="text-sm font-medium">TypeScript</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 bg-muted rounded-lg flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold">T</span>
-              </div>
-              <span className="text-sm font-medium">Tailwind</span>
-            </div>
+            ))}
           </div>
         </div>
       </section>

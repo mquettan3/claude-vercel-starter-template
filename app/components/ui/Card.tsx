@@ -1,4 +1,10 @@
-import { CardProps } from '@/types'
+interface CardProps {
+  title: string
+  description?: string
+  children?: React.ReactNode
+  className?: string
+  footer?: React.ReactNode
+}
 
 export default function Card({ 
   title, 
